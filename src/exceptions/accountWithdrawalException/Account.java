@@ -1,4 +1,4 @@
-package accountWithdrawalException;
+package exceptions.accountWithdrawalException;
 
 
 public class Account {

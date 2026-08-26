@@ -1,4 +1,4 @@
-package accountWithdrawalException;
+package exceptions.accountWithdrawalException;
 import java.util.Locale;
 import java.util.Scanner;
 
