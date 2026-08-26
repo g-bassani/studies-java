@@ -44,7 +44,7 @@ Exercises focused on exception handling and custom exceptions in Java.
 
 ---
 
-### Files
+### File
 
 Exercises focused on file handling, directories, reading and writing data, and processing structured files.
 
