@@ -8,7 +8,7 @@ The repositories are organized by topic, with each project containing separate f
 
 ### OOP
 
-Exercises focused on Object-Oriented Programming (OOP) in Java.
+Object-Oriented Programming concepts and practices in Java.
 
 **Topics:**
 
@@ -23,7 +23,7 @@ Exercises focused on Object-Oriented Programming (OOP) in Java.
 
 ### Matrices
 
-Exercises focused on working with two-dimensional arrays and matrix operations.
+Two-dimensional arrays and matrix operations.
 
 **Topics:**
 
@@ -36,7 +36,7 @@ Exercises focused on working with two-dimensional arrays and matrix operations.
 
 ### Exceptions
 
-Exercises focused on exception handling and custom exceptions in Java.
+Exception handling and custom exceptions.
 
 **Topics:**
 
@@ -44,9 +44,9 @@ Exercises focused on exception handling and custom exceptions in Java.
 
 ---
 
-### File
+### Files
 
-Exercises focused on file handling, directories, reading and writing data, and processing structured files.
+File I/O, directories, and structured data processing.
 
 **Topics:**
 
@@ -58,7 +58,7 @@ Exercises focused on file handling, directories, reading and writing data, and p
 
 ### Generics
 
-Exercises focused on Java Generics and type-safe programming.
+Generic types, type safety, and bounded wildcards.
 
 **Topics:**
 
@@ -69,7 +69,7 @@ Exercises focused on Java Generics and type-safe programming.
 
 ### Collections
 
-Exercises focused on the Java Collections Framework and the main collection types used to store and manipulate data.
+Java Collections Framework and object organization.
 
 **Topics:**
 
