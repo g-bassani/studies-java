@@ -1,4 +1,4 @@
-package generics.generics;
+package generics.genericRepository;
 import java.util.Locale;
 import java.util.Scanner;
 

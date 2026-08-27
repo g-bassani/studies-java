@@ -62,7 +62,7 @@ Exercises focused on Java Generics and type-safe programming.
 
 **Topics:**
 
-* **Generics:** Implementing a type-safe generic repository capable of storing and managing different object types such as employees, products, and administrators.
+* **Generic Repository:** Implementing a type-safe generic repository capable of storing and managing different object types such as employees, products, and administrators.
 * **Bounded Wildcards:** Using bounded wildcards (`? extends` and `? super`) to create generic methods that work with different numeric list types while safely reading and adding elements.
 
 ---

@@ -1,4 +1,4 @@
-package generics.generics;
+package generics.genericRepository;
 
 public class Product {
 
