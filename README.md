@@ -40,6 +40,7 @@ Exception handling and custom exceptions.
 
 **Topics:**
 
+* **Quadratic Equation Calculator:** `ArithmeticException` to validate a quadratic equation and its discriminant before calculating and returning its real roots.
 * **Account Withdrawal Exception:** Bank account withdrawal system with a custom `BalanceException` used to validate withdrawal limits and account balance.
 
 ---
