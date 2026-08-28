@@ -1,4 +1,4 @@
-package exceptions.arithmeticException;
+package exceptions.quadraticEquationCalculator;
 
 public class Calculator {
 

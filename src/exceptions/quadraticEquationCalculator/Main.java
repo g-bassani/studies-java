@@ -1,4 +1,4 @@
-package exceptions.arithmeticException;
+package exceptions.quadraticEquationCalculator;
 
 import java.util.Scanner;
 
