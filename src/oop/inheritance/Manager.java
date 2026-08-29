@@ -4,27 +4,27 @@ import java.time.LocalDate;
 
 public class Manager extends Employee {
 
-    private Double bonus;
+    private double bonus;
 
     public Manager() {
         super();
     }
 
-    public Manager(String name, Double salary, LocalDate birthDay, Double bonus, Role role) {
+    public Manager(String name, double salary, LocalDate birthDay, double bonus, Role role) {
         super(name, salary, birthDay, role);
         this.bonus = bonus;
     }
 
-    public Double getBonus() {
+    public double getBonus() {
         return bonus;
     }
 
-    public void setBonus(Double bonus) {
+    public void setBonus(double bonus) {
         this.bonus = bonus;
     }
 
     @Override
-    public Double totalSalary() {
+    public double totalSalary() {
         return getSalary() + bonus;
 
     }

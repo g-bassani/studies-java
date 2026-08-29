@@ -3,7 +3,7 @@ package generics.genericRepository;
 public class Employee {
 
     private String name;
-    private Integer id;
+    private final Integer id;
 
     public Employee(String name, Integer id) {
         this.name = name;

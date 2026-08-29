@@ -1,10 +1,11 @@
-package file.productFileProcessor;
+package exceptions.productRegister;
 
 public class Product {
 
     private String name;
     private double price;
     private int amount;
+
 
     public Product(String name, double price, int amount) {
         this.name = name;
@@ -35,19 +36,4 @@ public class Product {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-
-    public double total() {
-        return amount * price;
-
-    }
-
-    @Override
-    public String toString() {
-        return name
-                + ","
-                + total();
-
-
-    }
-
 }

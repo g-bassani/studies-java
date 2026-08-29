@@ -3,12 +3,12 @@ package exceptions.accountWithdrawalException;
 
 public class Account {
 
-    private Integer number;
+    private final Integer number;
     private String holder;
-    private Double balance;
-    private Double withdrawLimit;
+    private double balance;
+    private double withdrawLimit;
 
-    public Account(Integer number, String holder, Double balance, Double withdrawLimit) {
+    public Account(Integer number, String holder, double balance, double withdrawLimit) {
         this.number = number;
         this.holder = holder;
         this.balance = balance;
@@ -27,16 +27,16 @@ public class Account {
         this.holder = holder;
     }
 
-    public Double getBalance() {
+    public double getBalance() {
         return balance;
     }
 
 
-    public Double getWithdrawLimit() {
+    public double getWithdrawLimit() {
         return withdrawLimit;
     }
 
-    public void setWithdrawLimit(Double withdrawLimit) {
+    public void setWithdrawLimit(double withdrawLimit) {
         this.withdrawLimit = withdrawLimit;
     }
 

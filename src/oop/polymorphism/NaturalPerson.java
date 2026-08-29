@@ -2,27 +2,27 @@ package oop.polymorphism;
 
 public class NaturalPerson extends Person {
 
-    private Double medicalExpenses;
+    private double medicalExpenses;
 
     public NaturalPerson() {
         super();
     }
 
-    public NaturalPerson(String name, Double annualIncome, Double medicalExpenses) {
+    public NaturalPerson(String name, double annualIncome, double medicalExpenses) {
         super(name, annualIncome);
         this.medicalExpenses = medicalExpenses;
     }
 
-    public Double getMedicalExpenses() {
+    public double getMedicalExpenses() {
         return medicalExpenses;
     }
 
-    public void setMedicalExpenses(Double medicalExpenses) {
+    public void setMedicalExpenses(double medicalExpenses) {
         this.medicalExpenses = medicalExpenses;
     }
 
     @Override
-    public Double taxCalculation() {
+    public double taxCalculation() {
         double tax;
 
         if (getAnnualIncome() < 20000.00) {

@@ -43,6 +43,7 @@ Exception handling and custom exceptions.
 * **Password Validator:** Regular expressions and custom exception handling with `InvalidatePattern`, validating password requirements.
 * **Quadratic Equation Calculator:** `ArithmeticException` to validate a quadratic equation and its discriminant before calculating and returning its real roots.
 * **Account Withdrawal Exception:** Bank account withdrawal system with a custom `BalanceException` used to validate withdrawal limits and account balance.
+* **Product Register:** Validating product data and stock capacity using `ProductException` and `StockException`.
 
 ---
 

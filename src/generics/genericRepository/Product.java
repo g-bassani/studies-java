@@ -3,9 +3,9 @@ package generics.genericRepository;
 public class Product {
 
     private String name;
-    private Integer stockAmount;
+    private int stockAmount;
 
-    public Product(String name, Integer stockAmount) {
+    public Product(String name, int stockAmount) {
         this.name = name;
         this.stockAmount = stockAmount;
     }
@@ -18,11 +18,11 @@ public class Product {
         this.name = name;
     }
 
-    public Integer getStockAmount() {
+    public int getStockAmount() {
         return stockAmount;
     }
 
-    public void setStockAmount(Integer stockAmount) {
+    public void setStockAmount(int stockAmount) {
         this.stockAmount = stockAmount;
     }
 

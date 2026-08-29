@@ -3,13 +3,13 @@ package oop.composition;
 public class Part {
 
     private String name;
-    private Double price;
-    private Integer quantity;
+    private double price;
+    private int quantity;
 
     public Part() {
     }
 
-    public Part(String name, Double price, Integer quantity) {
+    public Part(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -23,23 +23,23 @@ public class Part {
         this.name = name;
     }
 
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public Integer getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(Integer quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
-    public Double subTotal() {
+    public double subTotal() {
         return quantity * price;
 
     }

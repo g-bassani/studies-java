@@ -11,7 +11,7 @@ public class MonthlyExpenses {
     private final static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     private final static DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("MM/yyyy");
     private YearMonth date;
-    private List<Expense> expenses = new ArrayList<>();
+    private final List<Expense> expenses = new ArrayList<>();
 
     public MonthlyExpenses(YearMonth date) {
         this.date = date;
@@ -39,7 +39,7 @@ public class MonthlyExpenses {
 
     }
 
-    public Double total() {
+    public double total() {
 
         double sum = 0.0;
         for (Expense e: expenses) {

@@ -2,8 +2,8 @@ package oop.interfaces;
 
 public interface OnlinePaymentSystem {
 
-    Double paymentFee(Double value);
+    double paymentFee(double value);
 
-    Double interest(Double value, Integer month);
+    double interest(double value, Integer month);
 
 }

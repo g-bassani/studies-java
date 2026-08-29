@@ -3,12 +3,12 @@ package oop.polymorphism;
 public abstract class Person {
 
     private String name;
-    private Double annualIncome;
+    private double annualIncome;
 
     public Person() {
     }
 
-    public Person(String name, Double annualIncome) {
+    public Person(String name, double annualIncome) {
         this.name = name;
         this.annualIncome = annualIncome;
     }
@@ -21,11 +21,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public Double getAnnualIncome() {
+    public double getAnnualIncome() {
         return annualIncome;
     }
 
-    public void setAnnualIncome(Double annualIncome) {
+    public void setAnnualIncome(double annualIncome) {
         this.annualIncome = annualIncome;
     }
 
@@ -36,6 +36,6 @@ public abstract class Person {
 
     }
 
-    public abstract Double taxCalculation();
+    public abstract double taxCalculation();
 
 }

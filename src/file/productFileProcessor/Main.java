@@ -52,7 +52,7 @@ public class Main {
                 String[] data = line.split(",");
                 String name = data[0];
                 double price = Double.parseDouble(data[1]);
-                Integer productAmount = Integer.parseInt(data[2]);
+                int productAmount = Integer.parseInt(data[2]);
 
                 productsObject.add(new Product(name, price, productAmount));
 

@@ -2,32 +2,32 @@ package oop.abstraction;
 
 public class Rectangle extends Shape {
 
-    private Double width;
-    private Double height;
+    private double width;
+    private double height;
 
     public Rectangle() {
         super();
     }
 
-    public Rectangle(Color color, Double width, Double height) {
+    public Rectangle(Color color, double width, double height) {
         super(color);
         this.width = width;
         this.height = height;
     }
 
-    public Double getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    public void setWidth(Double width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 
-    public Double getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setHeight(Double height) {
+    public void setHeight(double height) {
         this.height = height;
     }
 

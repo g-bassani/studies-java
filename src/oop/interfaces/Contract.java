@@ -8,11 +8,11 @@ public class Contract {
 
     private Integer number;
     private LocalDate date;
-    private Double totalValue;
+    private double totalValue;
 
     private List<Installment> installments = new ArrayList<>();
 
-    public Contract(Integer number, LocalDate date, Double totalValue) {
+    public Contract(Integer number, LocalDate date, double totalValue) {
         this.number = number;
         this.date = date;
         this.totalValue = totalValue;
@@ -26,7 +26,7 @@ public class Contract {
         return date;
     }
 
-    public Double getTotalValue() {
+    public double getTotalValue() {
         return totalValue;
     }
 
@@ -42,7 +42,7 @@ public class Contract {
         this.date = date;
     }
 
-    public void setTotalValue(Double totalValue) {
+    public void setTotalValue(double totalValue) {
         this.totalValue = totalValue;
     }
 

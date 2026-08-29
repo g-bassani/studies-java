@@ -4,27 +4,27 @@ import java.time.LocalDate;
 
 public class Developer extends Employee {
 
-    Integer completedProjects;
+    int completedProjects;
 
     public Developer() {
         super();
     }
 
-    public Developer(String name, Double salary, LocalDate birthDay, Integer completedProjects, Role role)  {
+    public Developer(String name, double salary, LocalDate birthDay, int completedProjects, Role role)  {
         super(name, salary, birthDay,role);
         this.completedProjects = completedProjects;
     }
 
-    public Integer getCompletedProjects() {
+    public int getCompletedProjects() {
         return completedProjects;
     }
 
-    public void setCompletedProjects(Integer completedProjects) {
+    public void setCompletedProjects(int completedProjects) {
         this.completedProjects = completedProjects;
     }
 
     @Override
-    public Double totalSalary() {
+    public double totalSalary() {
         return getSalary() + completedProjects * 500;
 
     }

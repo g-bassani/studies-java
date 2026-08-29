@@ -6,9 +6,9 @@ public class Expense implements Comparable<Expense> {
 
     private LocalDate expenseDate;
     private String name;
-    private Double value;
+    private double value;
 
-    public Expense(LocalDate expenseDate, Double value, String name) {
+    public Expense(LocalDate expenseDate, double value, String name) {
         this.value = value;
         this.name = name;
         this.expenseDate = expenseDate;
@@ -30,11 +30,11 @@ public class Expense implements Comparable<Expense> {
         this.name = name;
     }
 
-    public Double getValue() {
+    public double getValue() {
         return value;
     }
 
-    public void setValue(Double value) {
+    public void setValue(double value) {
         this.value = value;
     }
 

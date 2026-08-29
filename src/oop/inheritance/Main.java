@@ -40,12 +40,14 @@ public class Main {
                 int completedProjects = sc.nextInt();
                 Employee employee = new Developer(name, salary, birth, completedProjects, role);
                 employees.add(employee);
+                sc.nextLine();
 
             }else {
                 System.out.print("What is for bonus? ");
                 double bonus = sc.nextDouble();
                 Employee employee = new Manager(name, salary, birth, bonus, role);
                 employees.add(employee);
+                sc.nextLine();
             }
         }
 

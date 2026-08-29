@@ -5,13 +5,13 @@ public class ContractService {
 
     // Installment calculation based in an interface
 
-    private OnlinePaymentSystem paymentSystem;
+    private final OnlinePaymentSystem paymentSystem;
 
     public ContractService(OnlinePaymentSystem paymentSystem) {
         this.paymentSystem = paymentSystem;
     }
 
-    public void processContract(Contract contract, Integer months) {
+    public void processContract(Contract contract, int months) {
 
         double installmentPerMonth = contract.getTotalValue() / months;
         for (int i = 1; i <= months; i++) {

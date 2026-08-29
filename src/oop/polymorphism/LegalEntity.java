@@ -2,27 +2,27 @@ package oop.polymorphism;
 
 public class LegalEntity extends Person {
 
-    private Integer numberOfEmployees;
+    private int numberOfEmployees;
 
     public LegalEntity() {
         super();
     }
 
-    public LegalEntity(String name, Double annualIncome, Integer numberOfEmployees) {
+    public LegalEntity(String name, Double annualIncome, int numberOfEmployees) {
         super(name, annualIncome);
         this.numberOfEmployees = numberOfEmployees;
     }
 
-    public Integer getNumberOfEmployees() {
+    public int getNumberOfEmployees() {
         return numberOfEmployees;
     }
 
-    public void setNumberOfEmployees(Integer numberOfEmployees) {
+    public void setNumberOfEmployees(int numberOfEmployees) {
         this.numberOfEmployees = numberOfEmployees;
     }
 
     @Override
-    public Double taxCalculation() {
+    public double taxCalculation() {
         double tax;
 
         if (numberOfEmployees < 10) {

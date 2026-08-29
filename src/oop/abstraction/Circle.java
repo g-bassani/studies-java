@@ -2,22 +2,22 @@ package oop.abstraction;
 
 public class Circle extends Shape{
 
-    private Double radius;
+    private double radius;
 
     public Circle() {
         super();
     }
 
-    public Circle(Color color, Double radius) {
+    public Circle(Color color, double radius) {
         super(color);
         this.radius = radius;
     }
 
-    public Double getRadius() {
+    public double getRadius() {
         return radius;
     }
 
-    public void setRadius(Double radius) {
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 

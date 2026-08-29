@@ -5,10 +5,10 @@ import java.util.List;
 
 public class BookSector {
 
-    private Integer section;
-    private List<Book> bookList = new ArrayList<>();
+    private int section;
+    private final List<Book> bookList = new ArrayList<>();
 
-    public BookSector(Integer section) {
+    public BookSector(int section) {
         this.section = section;
     }
 
@@ -20,7 +20,7 @@ public class BookSector {
         return bookList;
     }
 
-    public void setSection(Integer section) {
+    public void setSection(int section) {
         this.section = section;
     }
 

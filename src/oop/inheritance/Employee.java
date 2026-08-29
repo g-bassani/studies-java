@@ -7,14 +7,14 @@ public class Employee {
 
     private final static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     private String name;
-    private Double salary;
+    private double salary;
     private LocalDate birthDay;
     private Role role;
 
     public Employee() {
     }
 
-    public Employee(String name, Double salary, LocalDate birthDay, Role role) {
+    public Employee(String name, double salary, LocalDate birthDay, Role role) {
         this.name = name;
         this.salary = salary;
         this.birthDay = birthDay;
@@ -29,7 +29,7 @@ public class Employee {
         this.name = name;
     }
 
-    public Double getSalary() {
+    public double getSalary() {
         return salary;
     }
 
@@ -49,7 +49,7 @@ public class Employee {
         this.role = role;
     }
 
-    public Double totalSalary() {
+    public double totalSalary() {
         return salary;
     }
 

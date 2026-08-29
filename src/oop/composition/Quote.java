@@ -8,18 +8,18 @@ import java.util.List;
 public class Quote {
 
     private static final DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-    private Double serviceValue;
+    private double serviceValue;
     private String carName;
     private LocalDateTime moment;
     private Status status;
 
     private Client client;
-    private List<Part> parts = new ArrayList<>();
+    private final List<Part> parts = new ArrayList<>();
 
     public Quote() {
     }
 
-    public Quote(Client client, Status status, LocalDateTime moment, String carName, Double serviceValue) {
+    public Quote(Client client, Status status, LocalDateTime moment, String carName, double serviceValue) {
         this.client = client;
         this.status = status;
         this.moment = moment;
@@ -27,11 +27,11 @@ public class Quote {
         this.serviceValue = serviceValue;
     }
 
-    public Double getServiceValue() {
+    public double getServiceValue() {
         return serviceValue;
     }
 
-    public void setServiceValue(Double serviceValue) {
+    public void setServiceValue(double serviceValue) {
         this.serviceValue = serviceValue;
     }
 
@@ -80,7 +80,7 @@ public class Quote {
 
     }
 
-    public Double total() {
+    public double total() {
         double sum = serviceValue;
 
         for (Part p: parts) {
