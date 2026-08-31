@@ -56,7 +56,7 @@ File I/O, directories, and structured data processing.
 * **Word Counter:** Counting the number of words that appear in a file.
 * **Product File Processor:** Creating files and directories, reading and writing CSV files, converting file data into objects, and generating a summary file.
 * **Book Section File Processor:** Creating directories and storing book records from a section in a text file.
-* **Launch Logger:** Creates a user-specific directory using the modern Path API and records each program launch, including its date and time, in a file named after the current day.
+* **Launch Logger:** Creates a user-specific directory using the modern `Path API` and records each program launch, including its date and time, in a file named after the current day.
 ---
 
 ### Generics

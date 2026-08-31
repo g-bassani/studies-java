@@ -22,7 +22,7 @@ public class Main {
         System.out.print(fmt.format(instant));
 
         Path directory = Path.of(System.getProperty("user.home"), "launches");
-        Path newFile = directory.resolve(fmt2.format(monthDay));
+        Path newFile = directory.resolve(fmt2.format(monthDay) + ".txt");
 
         try {
             Files.createDirectories(directory);
