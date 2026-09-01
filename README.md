@@ -66,6 +66,7 @@ Generic types, type safety, and bounded wildcards.
 **Topics:**
 
 * **Generic Repository:** Implementing a type-safe generic repository capable of storing and managing different object types such as employees, products, and administrators.
+* **Loot Chest:** Implementing a type-safe loot chest that stores items of any type and randomly selects an item when opened, while preventing empty chests and multiple openings.
 * **Bounded Wildcards:** Using bounded wildcards (`? extends` and `? super`) to create generic methods that work with different numeric list types while safely reading and adding elements.
 
 ---
