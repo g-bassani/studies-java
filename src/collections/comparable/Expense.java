@@ -42,6 +42,4 @@ public class Expense implements Comparable<Expense> {
     public int compareTo(Expense other) {
         return expenseDate.compareTo(other.getExpenseDate());
     }
-
-
 }

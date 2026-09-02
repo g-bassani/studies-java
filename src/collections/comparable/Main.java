@@ -31,7 +31,5 @@ public class Main {
         // Get the list ordered by date
 
         System.out.println(monthlyExpenses);
-
     }
-
 }
