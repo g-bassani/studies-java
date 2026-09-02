@@ -81,5 +81,6 @@ Java Collections Framework and object organization.
 * **Set:** `Set` and `HashSet`, demonstrating how duplicate objects are prevented using `equals()` and `hashCode()`, while counting unique students across multiple courses.
 * **Map:** `Map` and `LinkedHashMap`, processing candidate records from a CSV file and aggregating votes for candidates with the same name while preserving insertion order.
 * **Comparable:** `Comparable` interface, implementing the natural ordering of expense objects by date and organizing expenses within a monthly expense list.
+* **Queue:** `Queue` and `FIFO` processing, simulating a print queue where documents are added, processed, and removed in the order they were received.
 
 ---
