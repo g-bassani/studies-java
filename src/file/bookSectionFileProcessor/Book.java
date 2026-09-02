@@ -50,6 +50,5 @@ public class Book {
                 + status
                 + " | "
                 + id;
-
     }
 }

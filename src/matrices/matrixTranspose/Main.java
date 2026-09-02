@@ -21,7 +21,6 @@ public class Main {
                 {3, 5},
                 {5, 3},
                 {8, 6}
-
         };
 
         //Matrix transpose
@@ -30,8 +29,7 @@ public class Main {
 
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                aTranspose [j][i] = a[i][j];
-
+                aTranspose[j][i] = a[i][j];
             }
         }
 
@@ -39,25 +37,25 @@ public class Main {
             for (int j = 0; j < aTranspose[i].length; j++) {
                 System.out.print(aTranspose[i][j] + " ");
             }
-            System.out.println();
 
+            System.out.println();
         }
 
         int[][] bTranspose = new int[b[0].length][b.length];
         for (int i = 0; i < b.length; i++) {
             for (int j = 0; j < b[i].length; j++) {
                 bTranspose[j][i] = b[i][j];
-
             }
         }
 
         System.out.println();
+
         for (int i = 0; i < bTranspose.length; i++) {
             for (int j = 0; j < bTranspose[i].length; j++) {
                 System.out.print(bTranspose[i][j] + " ");
             }
-            System.out.println();
 
+            System.out.println();
         }
     }
 }

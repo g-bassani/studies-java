@@ -1,4 +1,5 @@
 package exceptions.accountWithdrawalException;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -28,13 +29,9 @@ public class Main {
             account.withdraw(amount);
 
             System.out.println("New balance: " + String.format("%.2f", account.getBalance()));
-
-        }
-        catch (BalanceException e) {
+        } catch (BalanceException e) {
             System.out.println(e.getMessage());
-
-        }
-        catch (RuntimeException e) {
+        } catch (RuntimeException e) {
             System.out.println("Unexpected error" + e.getMessage());
         }
     }

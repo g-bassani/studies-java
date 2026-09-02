@@ -10,8 +10,8 @@ public class Developer extends Employee {
         super();
     }
 
-    public Developer(String name, double salary, LocalDate birthDay, int completedProjects, Role role)  {
-        super(name, salary, birthDay,role);
+    public Developer(String name, double salary, LocalDate birthDay, int completedProjects, Role role) {
+        super(name, salary, birthDay, role);
         this.completedProjects = completedProjects;
     }
 
@@ -26,6 +26,5 @@ public class Developer extends Employee {
     @Override
     public double totalSalary() {
         return getSalary() + completedProjects * 500;
-
     }
 }

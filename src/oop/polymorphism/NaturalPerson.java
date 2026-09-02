@@ -24,20 +24,16 @@ public class NaturalPerson extends Person {
     @Override
     public double taxCalculation() {
         double tax;
-
         if (getAnnualIncome() < 20000.00) {
             tax = 0.15;
-
-        }else {
+        } else {
             tax = 0.25;
-
         }
+
         if (medicalExpenses > 0) {
             return (getAnnualIncome() * tax) - (medicalExpenses * 0.5);
-
-        }else {
+        } else {
             return getAnnualIncome() * tax;
-
         }
     }
 }

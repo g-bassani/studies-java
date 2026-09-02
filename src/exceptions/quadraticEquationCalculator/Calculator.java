@@ -19,10 +19,8 @@ public class Calculator {
 
         if (discriminant == 0) {
             return "one quadratic root: " + x1;
-
-        }else {
+        } else {
             return "x1: " + String.format("%.2f", x1) + " x2: " + String.format("%.2f", x2);
-
         }
     }
 }

@@ -1,6 +1,6 @@
 package oop.abstraction;
 
-public class Circle extends Shape{
+public class Circle extends Shape {
 
     private double radius;
 

@@ -1,4 +1,5 @@
 package generics.genericRepository;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -23,7 +24,6 @@ public class Main {
                 Repository<Employee> repository = new Repository<>(repositoryName);
 
                 for (int i = 1; i <= amount; i++) {
-
                     System.out.printf("Employee #%d:\n", i);
                     System.out.print("Name: ");
                     sc.nextLine();
@@ -36,12 +36,10 @@ public class Main {
 
                 System.out.println();
                 System.out.println(repository);
-
             } else if (type == 'P') {
                 Repository<Product> repository = new Repository<>(repositoryName);
 
                 for (int i = 1; i <= amount; i++) {
-
                     System.out.printf("Product #%d:\n", i);
                     System.out.print("Name: ");
                     sc.nextLine();
@@ -54,13 +52,11 @@ public class Main {
 
                 System.out.println();
                 System.out.println(repository);
-
             } else if (type == 'A') {
                 Repository<Administrator> repository = new Repository<>(repositoryName);
                 sc.nextLine();
 
                 for (int i = 1; i <= amount; i++) {
-
                     System.out.printf("Administrator #%d:\n", i);
                     System.out.print("Business name: ");
                     String businessName = sc.nextLine();
@@ -70,15 +66,11 @@ public class Main {
 
                 System.out.println();
                 System.out.println(repository);
-
             } else {
                 throw new IllegalArgumentException("Invalid type");
             }
-
-
-        }catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }
-
 }

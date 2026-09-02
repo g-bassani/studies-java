@@ -7,6 +7,7 @@ public class Stock {
 
     private String name;
     private int productLimit;
+
     private final List<Product> products = new ArrayList<>();
 
     public Stock(String name, int productLimit) {
@@ -60,7 +61,6 @@ public class Stock {
         // Test the limit of stock
 
         if (totalAmount() + product.getAmount() > productLimit) {
-
             throw new StockException("Not enough space in stock");
         }
 

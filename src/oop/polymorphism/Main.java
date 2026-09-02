@@ -1,4 +1,5 @@
 package oop.polymorphism;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -32,28 +33,26 @@ public class Main {
 
                 payerList.add(new NaturalPerson(name, annualIncome, medicalExpenses));
 
-            }else  {
+            } else {
                 System.out.print("Number of employees: ");
                 int numberOfEmployees = sc.nextInt();
 
                 payerList.add(new LegalEntity(name, annualIncome, numberOfEmployees));
-
             }
         }
+
         System.out.println();
         System.out.println("TAXES PAID:");
 
         double total = 0.0;
-        for (Person p: payerList) {
+        for (Person p : payerList) {
             total += p.taxCalculation();
             System.out.println(p);
-
         }
+
         System.out.println();
         System.out.println("TOTAL TAXES: $" + String.format("%.2f", total));
 
         sc.close();
     }
-
-
 }

@@ -1,4 +1,5 @@
 package collections.set;
+
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Scanner;
@@ -15,6 +16,7 @@ public class Main {
 
         System.out.print("How many students for course A: ");
         int amount = sc.nextInt();
+
         for (int i = 1; i <= amount; i++) {
             System.out.print("Id: ");
             int id = sc.nextInt();
@@ -26,6 +28,7 @@ public class Main {
 
         System.out.print("How many students are in course B: ");
         amount = sc.nextInt();
+
         for (int i = 1; i <= amount; i++) {
             System.out.print("Id: ");
             int id = sc.nextInt();
@@ -35,6 +38,7 @@ public class Main {
 
         System.out.print("How many students are in course C: ");
         amount = sc.nextInt();
+
         for (int i = 1; i <= amount; i++) {
             System.out.print("Id: ");
             int id = sc.nextInt();
@@ -44,6 +48,5 @@ public class Main {
 
         System.out.println();
         System.out.println("Total students at the institution: " + studentSet.size());
-
     }
 }

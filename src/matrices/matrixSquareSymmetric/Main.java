@@ -13,13 +13,11 @@ public class Main {
 
         int m, n;
 
-
         // Input example:
         // 3 4       -> rows, columns
         //10 8 15 12 -> row 1
         //21 11 23 8 -> row 2
         //14 5 13 19 -> row 3
-
 
         m = sc.nextInt();
         n = sc.nextInt();
@@ -29,7 +27,6 @@ public class Main {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 matrix[i][j] = sc.nextInt();
-
             }
         }
 
@@ -41,7 +38,6 @@ public class Main {
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix[0].length; j++) {
                     matrixTranspose[j][i] = matrix[i][j];
-
                 }
             }
 
@@ -49,16 +45,13 @@ public class Main {
 
             if (Arrays.deepEquals(matrix, matrixTranspose)) {
                 System.out.println("It's symmetric");
-
-            }else {
+            } else {
                 System.out.println("Not symmetric");
             }
-
-        }else {
+        } else {
             System.out.println("It's not a square");
         }
 
         sc.close();
     }
-
 }

@@ -1,4 +1,5 @@
 package file.LaunchLogger;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -30,9 +31,7 @@ public class Main {
                     fmt.format(instant) + "\n",
                     StandardOpenOption.CREATE,
                     StandardOpenOption.APPEND
-                    );
-
-
+            );
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

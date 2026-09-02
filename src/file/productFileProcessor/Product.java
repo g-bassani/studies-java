@@ -38,7 +38,6 @@ public class Product {
 
     public double total() {
         return amount * price;
-
     }
 
     @Override
@@ -46,8 +45,5 @@ public class Product {
         return name
                 + ","
                 + total();
-
-
     }
-
 }

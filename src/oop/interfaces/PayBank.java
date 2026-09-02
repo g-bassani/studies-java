@@ -6,7 +6,6 @@ public class PayBank implements OnlinePaymentSystem {
 
     public double paymentFee(double value) {
         return value * 0.02;
-
     }
 
     public double interest(double value, Integer month) {

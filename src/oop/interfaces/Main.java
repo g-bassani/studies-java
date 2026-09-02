@@ -29,10 +29,8 @@ public class Main {
 
         contractService.processContract(contract, instalmentsNumber);
 
-
         for (Installment i: contract.getInstallments()) {
             System.out.println(i.getDueDate().format(fmt) + " - " + String.format("%.2f", i.getValue()));
-
         }
 
         sc.close();

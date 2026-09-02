@@ -6,6 +6,7 @@ import java.util.List;
 public class Repository<T> {
 
     private String name;
+
     List<T> registers = new ArrayList<>(); // Generic list, multiple Classes
 
     public Repository(String name) {
@@ -40,7 +41,7 @@ public class Repository<T> {
         for (T r: registers) {
             sb.append(r).append("\n");
         }
-        return sb.toString();
 
+        return sb.toString();
     }
 }

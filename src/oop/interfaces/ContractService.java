@@ -1,4 +1,5 @@
 package oop.interfaces;
+
 import java.time.LocalDate;
 
 public class ContractService {
@@ -14,16 +15,14 @@ public class ContractService {
     public void processContract(Contract contract, int months) {
 
         double installmentPerMonth = contract.getTotalValue() / months;
-        for (int i = 1; i <= months; i++) {
 
+        for (int i = 1; i <= months; i++) {
             LocalDate monthOfInstallment = contract.getDate().plusMonths(i);
 
             double installmentInterest = installmentPerMonth + paymentSystem.interest(installmentPerMonth, i);
             double installmentTotal = installmentInterest + paymentSystem.paymentFee(installmentInterest);
 
-
             contract.addInstallment(new Installment(monthOfInstallment, installmentTotal));
-
         }
     }
 }

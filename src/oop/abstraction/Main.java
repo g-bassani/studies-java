@@ -1,4 +1,5 @@
 package oop.abstraction;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -30,20 +31,21 @@ public class Main {
                 double height = sc.nextDouble();
 
                 shapeList.add(new Rectangle(color, width, height));
-
-            }else  {
+            } else {
                 System.out.print("Radius: ");
                 double radius = sc.nextDouble();
 
                 shapeList.add(new Circle(color, radius));
             }
         }
+
         System.out.println();
         System.out.println("SHAPES AREAS:");
 
-        for (Shape s: shapeList) {
+        for (Shape s : shapeList) {
             System.out.println("Area: " + String.format("%.2f", s.area()) + " Color: " + s.getColor());
         }
+
         sc.close();
     }
 }

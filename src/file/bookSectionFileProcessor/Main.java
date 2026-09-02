@@ -1,11 +1,11 @@
 package file.bookSectionFileProcessor;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.Scanner;
-
 
 public class Main {
 
@@ -37,8 +37,8 @@ public class Main {
 
             Book book = new Book(name, author, status, id);
             bookSector.addBook(book);
-
         }
+
         System.out.println();
         System.out.print("Enter the folder for the registers: ");
         String path = sc.nextLine();
@@ -55,15 +55,14 @@ public class Main {
             br.write("Section " + bookSector.getSection());
             br.newLine();
 
-            for (Book b: bookSector.getBookList()) {
+            for (Book b : bookSector.getBookList()) {
                 br.write(b.bookSpecs());
                 br.newLine();
-
             }
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
-
         }
+
         sc.close();
     }
 }

@@ -29,6 +29,5 @@ public class Main {
         ListManager.doubleList(integerList, objectList);
         ListManager.doubleList(doublesList, objectList);
         ListManager.printList(objectList);
-
     }
 }

@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+
         Queue<PrintJob> printJobQueue = new LinkedList<PrintJob>();
 
         System.out.print("Jobs amount: ");
@@ -20,6 +21,7 @@ public class Main {
             System.out.printf("Print #%d:\n", i);
             System.out.print("Document name: ");
             String documentName = sc.nextLine();
+
             printJobQueue.offer(new PrintJob(documentName));
         }
 
@@ -29,15 +31,14 @@ public class Main {
                 System.out.println("Next job to print: " + printJobQueue.peek());
                 TimeUnit.SECONDS.sleep(2);
                 System.out.println("Printing: " + printJobQueue.peek());
+
                 printJobQueue.poll();
             }
-
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
         }
 
         System.out.println("Queue is now empty");
         sc.close();
-
     }
 }

@@ -11,6 +11,7 @@ public class MonthlyExpenses {
     private final static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     private final static DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("MM/yyyy");
     private YearMonth date;
+
     private final List<Expense> expenses = new ArrayList<>();
 
     public MonthlyExpenses(YearMonth date) {
@@ -31,18 +32,15 @@ public class MonthlyExpenses {
 
     public void addExpense(Expense expense) {
         expenses.add(expense);
-
     }
 
     public void removeExpense(Expense expense) {
         expenses.remove(expense);
-
     }
 
     public double total() {
-
         double sum = 0.0;
-        for (Expense e: expenses) {
+        for (Expense e : expenses) {
             sum += e.getValue();
         }
         return sum;
@@ -58,14 +56,11 @@ public class MonthlyExpenses {
         Collections.sort(sortedExpenses);
 
         sb.append("Mouth: ").append(date.format(fmt2)).append("\n");
-        for (Expense e: sortedExpenses) {
+        for (Expense e : sortedExpenses) {
             sb.append(e.getName()).append(": ").append(String.format("%.2f", e.getValue())).append(" - ")
                     .append(e.getExpenseDate().format(fmt)).append("\n");
-
         }
         sb.append("Total: ").append(String.format("%.2f", total()));
         return sb.toString();
-
     }
-
 }

@@ -37,10 +37,8 @@ public class Main {
             for(Product p: stock.getProducts()) {
                 System.out.print(p.getName() + " | " + p.getPrice() + " | " + p.getAmount());
             }
-
         }catch (ProductException | StockException e) {
             System.out.println(e.getMessage());
-
         }
     }
 }

@@ -73,37 +73,34 @@ public class Quote {
 
     public void addPart(Part part) {
         parts.add(part);
-
     }
+
     public void removePart(Part part) {
         parts.remove(part);
-
     }
 
     public double total() {
         double sum = serviceValue;
 
-        for (Part p: parts) {
+        for (Part p : parts) {
             sum += p.subTotal();
-
         }
         return sum;
     }
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        
+
         sb.append("Car: ").append(carName).append("\n");
         sb.append("Service value: ").append(String.format("%.2f", serviceValue)).append("\n");
-        sb.append("Moment: " ).append(moment.format(fmt)).append("\n");
+        sb.append("Moment: ").append(moment.format(fmt)).append("\n");
         sb.append("Status: ").append(status).append("\n");
-        sb.append("Client: ").append(client.getName()).append(" ").append(client.getPhoneNumber()).append( "\n");
+        sb.append("Client: ").append(client.getName()).append(" ").append(client.getPhoneNumber()).append("\n");
         sb.append("Parts: " + "\n");
 
-        for (Part p: parts) {
+        for (Part p : parts) {
             sb.append(p.getName()).append(", ").append("Price: ").append(String.format("%.2f", p.getPrice())).append(" ").append("Subtotal: ")
-                    .append(String.format("%.2f", p.subTotal())).append(" | ").append(p.getQuantity()).append( "\n");
-
+                    .append(String.format("%.2f", p.subTotal())).append(" | ").append(p.getQuantity()).append("\n");
         }
         sb.append("Total: ").append(String.format("%.2f", total()));
 

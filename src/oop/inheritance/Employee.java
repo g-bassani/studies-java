@@ -55,13 +55,9 @@ public class Employee {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(name).append( " ").append(birthDay.format(fmt)).append (" ").append(role).append("\n");
-        sb.append("Base salary: ").append(String.format("%.2f", salary)).append( "\n").append("Total salary of this mouth: ").append(String.format("%.2f", totalSalary()));
+        sb.append(name).append(" ").append(birthDay.format(fmt)).append(" ").append(role).append("\n");
+        sb.append("Base salary: ").append(String.format("%.2f", salary)).append("\n").append("Total salary of this mouth: ").append(String.format("%.2f", totalSalary()));
 
         return sb.toString();
     }
-
-
-
-
 }

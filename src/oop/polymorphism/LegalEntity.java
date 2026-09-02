@@ -28,10 +28,10 @@ public class LegalEntity extends Person {
         if (numberOfEmployees < 10) {
             tax = 0.16;
 
-        }else {
+        } else {
             tax = 0.14;
         }
-        return getAnnualIncome() * tax;
 
+        return getAnnualIncome() * tax;
     }
 }

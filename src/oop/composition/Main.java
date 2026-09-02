@@ -1,8 +1,8 @@
 package oop.composition;
+
 import java.time.LocalDateTime;
 
 public class Main {
-
 
     public static void main(String[] args) {
 
@@ -21,6 +21,5 @@ public class Main {
         quote.addPart(part);
         quote.addPart(part1);
         System.out.println(quote);
-
     }
 }

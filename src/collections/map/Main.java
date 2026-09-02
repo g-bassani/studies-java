@@ -28,15 +28,12 @@ public class Main {
                 int votes = sc.nextInt();
                 sc.nextLine();
 
-
                 bw.write(name + "," + votes);
                 bw.newLine();
             }
-
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.print(e.getMessage());
         }
-
 
         Map<String, Integer> candidates = new LinkedHashMap<>();
 
@@ -51,15 +48,13 @@ public class Main {
 
                 if (candidates.containsKey(name)) {
                     candidates.put(name, candidates.get(name) + votes);
-                }else {
+                } else {
                     candidates.put(name, votes);
                 }
 
-
                 line = br.readLine();
             }
-
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 

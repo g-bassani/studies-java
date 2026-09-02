@@ -1,4 +1,5 @@
 package file.productFileProcessor;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -35,15 +36,13 @@ public class Main {
                 bw.write(products[i]);
                 bw.newLine();
             }
-
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
         // Transform the file into objects
 
         List<Product> productsObject = new ArrayList<>();
-
 
         try (BufferedReader br = new BufferedReader(new FileReader(newUserFile))) {
             String line;
@@ -55,11 +54,8 @@ public class Main {
                 int productAmount = Integer.parseInt(data[2]);
 
                 productsObject.add(new Product(name, price, productAmount));
-
             }
-
-
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
@@ -72,12 +68,11 @@ public class Main {
         outFolder.mkdirs(); // Create a subfolder with the result
 
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(summary))) {
-            for (Product p: productsObject) {
+            for (Product p : productsObject) {
                 bw.write(p.toString());
                 bw.newLine();
             }
-
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }

@@ -21,7 +21,6 @@ public class Main {
         sc.nextLine();
         List<Employee> employees = new ArrayList<>();
 
-
         for (int i = 0; i < amount; i++) {
             System.out.printf("#%d employee:\n", i + 1);
             System.out.print("Name: ");
@@ -34,15 +33,13 @@ public class Main {
             System.out.print("Role (DEVELOPER, MANAGER): ");
             Role role = Role.valueOf(sc.nextLine().toUpperCase());
 
-
             if (role == Role.DEVELOPER) {
                 System.out.print("How many projects did he finished? ");
                 int completedProjects = sc.nextInt();
                 Employee employee = new Developer(name, salary, birth, completedProjects, role);
                 employees.add(employee);
                 sc.nextLine();
-
-            }else {
+            } else {
                 System.out.print("What is for bonus? ");
                 double bonus = sc.nextDouble();
                 Employee employee = new Manager(name, salary, birth, bonus, role);
@@ -52,11 +49,12 @@ public class Main {
         }
 
         System.out.println("Employees: ");
-        for (Employee e: employees) {
+        for (Employee e : employees) {
             System.out.println(e);
             System.out.println();
 
         }
+
         sc.close();;
     }
 }

@@ -10,13 +10,11 @@ public class Account {
         this.accountNumber = accountNumber;
         this.name = name;
         deposit(initial);
-
     }
 
     public Account(int accountNumber, String name) {
         this.accountNumber = accountNumber;
         this.name = name;
-
     }
 
     public int getAccountNumber() {
@@ -37,12 +35,10 @@ public class Account {
 
     public void deposit(double value) {
         balance += value;
-
     }
 
     public void withdraw(double value) {
         balance -= value + 5.0;
-
     }
 
     public String toString() {
@@ -52,6 +48,5 @@ public class Account {
                 + name
                 + ", Balance: $"
                 + balance;
-
     }
 }

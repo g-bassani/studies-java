@@ -41,8 +41,6 @@ public class Part {
 
     public double subTotal() {
         return quantity * price;
-
     }
-
 }
 

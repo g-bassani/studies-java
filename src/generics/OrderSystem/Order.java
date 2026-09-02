@@ -6,6 +6,7 @@ import java.util.List;
 public class Order<T> {
 
     private final int orderNumber;
+
     private final List<T> dishes = new ArrayList<>();
 
     public Order(int orderNumber) {
@@ -28,14 +29,13 @@ public class Order<T> {
     public String orderStatus() {
         if (dishes.isEmpty()) {
             return "No dishes yet";
-
         }
 
         StringBuilder sb = new StringBuilder();
-        for(T d: dishes) {
+        for (T d : dishes) {
             sb.append(d).append("\n");
-
         }
+
         return sb.toString();
     }
 }

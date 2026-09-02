@@ -1,4 +1,5 @@
 package generics.LootChest;
+
 import java.util.List;
 import java.util.Random;
 
@@ -24,13 +25,11 @@ public class LootChest<T> {
     }
 
     public T openChest() {
-
-        if(!chestStatus) {
+        if (!chestStatus) {
             throw new IllegalArgumentException("Already opened");
         }
 
         chestStatus = false;
         return items.get(random.nextInt(items.size()));
-
     }
 }

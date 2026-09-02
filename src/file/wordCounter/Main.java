@@ -21,28 +21,24 @@ public class Main {
         System.out.print("Word: ");
         String word = sc.nextLine().toLowerCase();
 
-
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split("[\\p{Punct}\\s]+");
 
-                for (String w: data) {
+                for (String w : data) {
                     if (w.toLowerCase().equals(word)) {
                         wordCount += 1;
-
                     }
                 }
             }
-
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.print(e.getMessage());
         }
 
         if (wordCount == 0) {
             System.out.println("Word not present");
-
-        }else {
+        } else {
             System.out.print("The word " + word + " appears " + wordCount + " times");
         }
 

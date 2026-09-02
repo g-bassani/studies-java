@@ -26,12 +26,9 @@ public class BookSector {
 
     public void addBook(Book book) {
         bookList.add(book);
-
     }
 
     public void removeBook(Book book) {
         bookList.remove(book);
-
     }
-
 }

@@ -33,9 +33,7 @@ public abstract class Person {
         return name
                 +": $"
                 + String.format("%.2f", taxCalculation());
-
     }
 
     public abstract double taxCalculation();
-
 }

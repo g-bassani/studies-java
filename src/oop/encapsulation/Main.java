@@ -1,7 +1,7 @@
 package oop.encapsulation;
+
 import java.util.Locale;
 import java.util.Scanner;
-
 
 public class Main {
 
@@ -10,7 +10,6 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         Account account;
-
 
         System.out.print("Enter the account number: ");
         int accountNumber = sc.nextInt();
@@ -23,13 +22,11 @@ public class Main {
         String choice = sc.nextLine();
 
         if (choice.equals("y")) {
-           System.out.print("Enter the initial deposit: ");
-           double initial = sc.nextDouble();
-           account = new Account(accountNumber, name, initial);
-
-        }else {
+            System.out.print("Enter the initial deposit: ");
+            double initial = sc.nextDouble();
+            account = new Account(accountNumber, name, initial);
+        } else {
             account = new Account(accountNumber, name);
-
         }
 
         System.out.println("Account data: " + account);
@@ -37,7 +34,6 @@ public class Main {
         System.out.print("Enter a value to deposit: ");
         double value = sc.nextDouble();
         account.deposit(value);
-
 
         System.out.println("Updated account data: " + account);
 
@@ -50,5 +46,4 @@ public class Main {
 
         sc.close();
     }
-
 }

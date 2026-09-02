@@ -1,6 +1,5 @@
 package exceptions.accountWithdrawalException;
 
-
 public class Account {
 
     private final Integer number;
@@ -31,7 +30,6 @@ public class Account {
         return balance;
     }
 
-
     public double getWithdrawLimit() {
         return withdrawLimit;
     }
@@ -42,16 +40,17 @@ public class Account {
 
     public void deposit(double amount) {
         balance += amount;
-
     }
+
     public void withdraw(double amount) {
         if (amount > balance) {
             throw new BalanceException("Not enough balance");
         }
-        if (amount > withdrawLimit){
+
+        if (amount > withdrawLimit) {
             throw new BalanceException("Withdrawal higher than the limit");
         }
-        balance -= amount;
 
+        balance -= amount;
     }
 }
