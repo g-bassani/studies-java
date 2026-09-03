@@ -92,4 +92,7 @@ Java Stream API and functional programming concepts, focusing on processing and 
 
 **Topics**
 
-* **Employee Processing:** Streams, demonstrating filtering, mapping, sorting, and reducing employee data to process salaries and emails.
+* **Employee Processing:** Demonstrating filtering, mapping, sorting, and reducing employee data to process salaries and emails.
+* **Spent More:** Demonstrating `max()`, `Comparator`, method references, and `Optional` to find the customer who spent the most.
+
+---
