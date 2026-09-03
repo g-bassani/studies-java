@@ -84,3 +84,12 @@ Java Collections Framework and object organization.
 * **Queue:** `Queue` and `FIFO` processing, simulating a print queue where documents are added, processed, and removed in the order they were received.
 
 ---
+
+
+### Streams
+
+Java Stream API and functional programming concepts, focusing on processing and transforming collections in a declarative way.
+
+**Topics**
+
+* **Employee Processing:** Streams, demonstrating filtering, mapping, sorting, and reducing employee data to process salaries and emails.
