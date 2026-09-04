@@ -92,6 +92,7 @@ Java Stream API and functional programming concepts, focusing on processing and 
 
 **Topics**
 
+* **Prime Numbers:** Using `filter()`, method references, and `toList()` to extract prime numbers from a list.
 * **Employee Processing:** Demonstrating filtering, mapping, sorting, and reducing employee data to process salaries and emails.
 * **Spent More:** Demonstrating `max()`, `Comparator`, method references, and `Optional` to find the customer who spent the most.
 
